@@ -42,7 +42,7 @@ img {
 #image-text2{
     position: absolute;
 	top: 60%;
-	left: 10%;
+	left: 9.5%;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
 	color: #de4ff1;
@@ -50,3 +50,47 @@ img {
 	text-align: left;
     text-shadow: black;
 }
+#image-text3{
+    position: absolute;
+	top: 60%;
+	right: -3%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+	color: #de4ff1;
+	transform: translate(-30%, -30%);
+	text-align: right;
+    text-shadow: black;
+}
+
+/*styling main using grids*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+/*profile image styles*/
+
+  .one {
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 25%;
+    margin-top: 10%;
+
+  }
+
+  /* Styling About Me Grid*/
+   
+  .AboutMe {
+    grid-column: 1;
+    grid-row: 3/4;
+    border: #de4ff1;
+    border-style: double;
+    border-style: double;
+    text-align: center;
+    margin: 2%;
+    margin-top: -20%;
+    padding: 5%
+  }
