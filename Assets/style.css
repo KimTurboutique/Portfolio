@@ -2,15 +2,14 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    text-decoration: none;
-    list-style: none;
+
 }
 
 :root{
     --bg-color: black;
     --text-color: blueviolet;
     --main-color: purple;
+    --font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }   
 /* Styling Header Image and text */
 
@@ -24,6 +23,7 @@ header {
     width: 100%;
     top: 0;
     right: 0;
+    color: #de4ff1;
 
 }
 
@@ -33,11 +33,11 @@ header {
 	padding: none;
 }
 
-#image-text {
+#navtext{
 	position: absolute;
 	top: 30%;
 	left: 7%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: var(--font-family);
     font-size: xx-large;
 	color: #de4ff1;
 	transform: translate(-30%, -30%);
@@ -47,11 +47,11 @@ header {
     text-shadow: black;
 }
 
-#image-text2{
+#navtext2{
     position: absolute;
 	top: 60%;
 	left: 9.5%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family:var(--font-family);
     font-size: x-large;
 	color: #de4ff1;
 	transform: translate(-30%, -30%);
@@ -59,31 +59,26 @@ header {
 
 }
 
-#image-text3{
+nav {
     position: absolute;
 	top: 60%;
 	right: -3%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: var(--font-family);
     font-size: x-large;
 	color: #de4ff1;
 	transform: translate(-30%, -30%);
 	text-align: right;
     text-shadow: black;
 }
-
-/* nav styling*/
-
-#navbar {
-    position: absolute;
-	top: 60%;
-	right: 9.5%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-}
-
-#navbar ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #de4ff1;
+    text-decoration: none;
 }
 
 /*styling main section using grids*/
@@ -107,7 +102,7 @@ body{
     grid-column: 1;
     grid-row: 1/3;
     margin: 25%;
-    margin-top: 50%;
+    margin-top: 60%;
     margin-left: 32%;
     margin-right: 18%;
 
@@ -121,17 +116,24 @@ body{
     border: #de4ff1;
     border-style: double;
     text-align: center;
+    font-size: large;
     margin: 2%;
     margin-top: -20%;
-    margin-left: 25%;
+    margin-left: 22%;
     margin-right: 10%;
-    padding: 5%
-  }
- 
-.projects{
-    margin: 2%;
-    margin-top: 50%;
+    padding: 5%;
+    background-color:blueviolet;
+    color: black;
+}
+
+.contact{
     border: #de4ff1 solid;
     border-style: double;
-    border-width: 75%;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: var(--font-family);
+    text-align: center;
 }
