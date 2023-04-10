@@ -2,11 +2,16 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: black;
-    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    text-decoration: none;
+    list-style: none;
 }
 
+:root{
+    --bg-color: black;
+    --text-color: blueviolet;
+    --main-color: purple;
+}   
 /* Styling Header Image and text */
 
 img {
@@ -14,9 +19,12 @@ img {
     height: 200px;
 }
 
-#header-image-menu{
-	top: 0px;
-	position: relative;
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+
 }
 
 #header-image-menu img{
@@ -48,8 +56,9 @@ img {
 	color: #de4ff1;
 	transform: translate(-30%, -30%);
 	text-align: left;
-    text-shadow: black;
+
 }
+
 #image-text3{
     position: absolute;
 	top: 60%;
@@ -62,7 +71,28 @@ img {
     text-shadow: black;
 }
 
+/* nav styling*/
+
+#navbar {
+    position: absolute;
+	top: 60%;
+	right: 9.5%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
 /*styling main section using grids*/
+
+body{
+    min-height: auto;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
 
 .container {
     display: grid;
@@ -73,24 +103,35 @@ img {
 
 /*profile image styles*/
 
-  .one {
+.profilepic {
     grid-column: 1;
     grid-row: 1/3;
     margin: 25%;
-    margin-top: 10%;
+    margin-top: 50%;
+    margin-left: 32%;
+    margin-right: 18%;
 
   }
 
   /* Styling About Me Grid*/
 
-  .AboutMe {
+.AboutMe {
     grid-column: 1;
     grid-row: 3/4;
     border: #de4ff1;
     border-style: double;
-    border-style: double;
     text-align: center;
     margin: 2%;
     margin-top: -20%;
+    margin-left: 25%;
+    margin-right: 10%;
     padding: 5%
   }
+ 
+.projects{
+    margin: 2%;
+    margin-top: 50%;
+    border: #de4ff1 solid;
+    border-style: double;
+    border-width: 75%;
+}
