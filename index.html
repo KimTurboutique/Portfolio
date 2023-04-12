@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
-         <meta charset="UTF-8" />
-         <meta name="viewpoint" content="width=device-width, initial scale=1" />
-         <link rel="stylesheet" href="../Portfolio/Assets/style.css">
-        <title>Kimberly R.- Web Developer</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial scale=1" />
+    <link rel="stylesheet" href="../Portfolio/Assets/style.css">
+    <title>Kimberly R.- Web Developer</title>
+</head>
 
+<body>
     <header>
         <section id="navbar">
-             <img src="./Assets/headerimage.jpeg" alt="image of purple 3d brick wall">
-             <h1 id= "navtext"> Kimberly R.</h1>
-             <h2 id="navtext2">Web Designer & Developer</h2>
-                <nav> 
-                    <ul>
-                        <li>
-                             <a href="#AboutMe" class="active">About Me</a>
-                        </li>
-                        <li>
-                             <a href="#" class="projects">Projects</a>
-                        </li>
-                        <li>
-                             <a href="#contact" class="active">Contact</a>
-                        </li>
-                    </ul>
+            <img src="./Assets/headerimage.jpeg" alt="image of purple 3d brick wall">
+            <h1 id="navtext"> Kimberly R.</h1>
+            <h2 id="navtext2">| Web Designer & Developer |</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#AboutMe" class="active"> About Me | </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="projects"> Projects | </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="active"> Contact</a>
+                    </li>
+                </ul>
 
-                </nav>
-        </section>   
+            </nav>
+        </section>
     </header>
 
-    <main>
+    <main class="flex">
         <section class="container">
-            <!--used CSS grid layout-->
-            <section class="profilepic"> <img src="./Assets/profilepic.PNG" alt="image of Kimberly's headshot"></section>
-            <section id="AboutMe" class="AboutMe">About Me
-                <p> I am an aspiring Full-Stack Web Developer. My interest in web development and coding started when I built a Shopify E-commerce store for my business. 
-                    A business colleague suggested taking a coding bootcamp as he saw how enthused I was with building my store's site. 
-                    I also wanted a new challenge in life as a dedicated individual that is always looking to gain skills and knowledge in multiple industries. 
-                    After doing some research I decided to join the UM Coding Boot Camp where I am currently learning the fundamental skills needed to become a full-stack web developer. </p>
+            <!--used flexbox-->
+            <section id="profilepic" class="profilepic">                 
+                <img src="./Assets/profilepic.PNG"
+                alt="image of Kimberly's headshot" class="headshot">
             </section>
-            <section id="First Project" class="projects">
-            
-                
-            </section>
-        </section>
-        <!--added project section to the right of page-->
-        <section id="contact" class="contact">
-            <p> Placeholder paragraph gmoinains usmnimosm simoisminsf eumniufdnodnm simnfinfonfosa snsnfomnf. Jifdmoismn awomf nsoi</p> 
-        </section>
 
+            <br>
+
+            <section id="AboutMe" class="AboutMe">
+                <h3> About Me</h3>
+                 I am an aspiring Full-Stack Web Developer. My interest in web development and coding started when I
+                    built a Shopify E-commerce store for my business.
+                    A business colleague suggested taking a coding bootcamp as he saw how enthused I was with building
+                    my
+                    store's site.
+                    I also wanted a new challenge in life as a dedicated individual that is always looking to gain
+                    skills
+                    and knowledge in multiple industries.
+                    After doing some research I decided to join the UM Coding Boot Camp where I am currently learning
+                    the
+                    fundamental skills needed to become a full-stack web developer.
+            </section>
+        </section>
+        <br>
+        <!--added project section-->
+        <section id="projects" class="flexprojects">
+
+        <!-- fixed links to open in a new tab-->
+            <p class="projects">
+                <a href="https://turboutique.net/" target="_blank">
+                    <img src="./Assets/firstproject.png" alt="Link to turboutique website project" style="width:800px;height:400px;">
+                    </a> 
+            </p>
+
+            <p class="projects">
+                <a href="https://kimturboutique.github.io/MarketingAgency/" target="_blank">
+                   <img src="./Assets/secondproject.png" alt="Link to Marketing Agency webpage project" style="width:800px;height:400px;">
+                </a>
+
+            </p>
+            <p class="projects">
+                <a href="" target="_blank">
+                    <img src="./Assets/thirdproject.png" alt="Link to Portfolio" style="width:800px;height:400px;">
+                 </a>
+            </p>
+        </section>
     </main>
-    <footer> 
-        <p> 2023 KR</p>
+    
+    <footer>
+        <section id="contact" class="contact">
+         Contact: <a href="mailto:kimberly_radway@live.com" class="contactlinks">Send me an Email</a> | <a href="https://github.com/KimTurboutique" class="contactlinks">Github</a> 
+        </section>
+         Ⓒ Copyright 2023 ~KR~
     </footer>
+</body>
+
+
 </html>
