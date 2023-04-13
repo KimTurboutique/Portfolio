@@ -9,13 +9,15 @@ This project highlights my coding journey. It was done for the Bootcamp Week 2 C
 
 ### Webpage URL:
 
-### Webpage screenshots
+### Webpage screenshots:
 
-### References are as follows:
+### References and Tools are as follows:
 
 * [Learn CSS Flexbox in 15 minutes](https://www.youtube.com/watch?v=fYq5PXgSsbE&feature=youtu.be)
 
 * [w3 Schools](https://www.w3schools.com)
+
+* VSC, Google Chrome Console.
 
 ### Acknowledgements
 
