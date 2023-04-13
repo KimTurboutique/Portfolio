@@ -7,9 +7,10 @@ This project highlights my coding journey. It was done for the Bootcamp Week 2 C
 * CSS Variables
 
 
-### Webpage URL:
+### Webpage URL: (https://kimturboutique.github.io/Portfolio/)
 
 ### Webpage screenshots:
+<img width="1440" alt="Screenshot 2023-04-12 at 10 51 46 PM" src="https://user-images.githubusercontent.com/127644189/231635824-d943bfa2-0777-4588-ac83-7aadfb6b2fcb.png">
 
 ### References and Tools are as follows:
 
